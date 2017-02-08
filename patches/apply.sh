@@ -1,7 +1,6 @@
 #!/bin/bash
 
 echo Patch av
-cd patches
 cp 0001-mtk-av.patch ../../../frameworks/av/0001-mtk-av.patch
 cd ../../../frameworks/av
 patch -p1 <0001-mtk-av.patch
