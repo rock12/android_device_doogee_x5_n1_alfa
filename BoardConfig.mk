@@ -157,7 +157,10 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # SELinux
 BOARD_SEPOLICY_DIRS := \
        device/doogee/x5/sepolicy
-       
+
+# Hack for build
+$(shell mkdir -p $(OUT)/obj/KERNEL_OBJ/usr)
+
 # RIL
 BOARD_RIL_CLASS := ../../../$(LOCAL_PATH)/ril
 
