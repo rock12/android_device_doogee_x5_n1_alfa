@@ -10,3 +10,8 @@ cd -
 cp 0004-libnetutils-add-MTK-bits.patch ../../../../system/core/0004-libnetutils-add-MTK-bits.patch
 cd ../../../../system/core
 patch -p1 <0004-libnetutils-add-MTK-bits.patch
+
+cd -
+cp bt.patch ../../../../system/bt.patch
+cd ../../../../system
+patch -p1 <bt.patch
